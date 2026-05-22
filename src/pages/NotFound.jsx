@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 useEffect(() => {
   document.title = 'MediQueue - Page Not Found';
 }, []);
