@@ -1,16 +1,23 @@
-# React + Vite
+# MediQueue – Tutor Booking System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Website:** [https://medi-queu-client-rho.vercel.app](https://medi-queu-client-rho.vercel.app)
 
-Currently, two official plugins are available:
+A modern full-stack tutor booking platform where students can easily find, book, and manage online/offline learning sessions with expert tutors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Secure user authentication (Register / Login with JWT)
+- Browse and search tutors by name or subject
+- Detailed tutor profiles with availability and booking system
+- Private dashboard for students and tutors
+- Add Tutor, My Tutors, and My Booked Sessions with full CRUD
+- Real-time slot management (auto decrease after booking)
+- Responsive design for mobile, tablet, and desktop
+- Dynamic page titles and beautiful UI with Tailwind CSS
+- Toast notifications for all actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React + Vite + Tailwind CSS + React Router
+- **Backend:** Node.js + Express + MongoDB
+- **Authentication:** JWT
