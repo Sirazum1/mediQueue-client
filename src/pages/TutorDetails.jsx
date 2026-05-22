@@ -18,9 +18,10 @@ const TutorDetails = () => {
     studentName: '',
     phone: ''
   });
+
   useEffect(() => {
-  document.title = 'MediQueue - Tutor Details';
-}, []);
+    document.title = 'MediQueue - Tutor Details';
+  }, []);
 
   useEffect(() => {
     axios.get(`${API_URL}/api/tutors/${id}`)

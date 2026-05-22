@@ -9,12 +9,10 @@ const Home = () => {
   const [tutors, setTutors] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Dynamic Title (as per assignment requirement)
   useEffect(() => {
     document.title = 'MediQueue - Home';
   }, []);
 
-  // Fetch tutors
   useEffect(() => {
     axios.get(`${API_URL}/api/tutors`)
       .then(res => {

@@ -1,8 +1,7 @@
-
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
-import { useEffect, useState } from 'react';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -14,8 +13,8 @@ const Register = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-  document.title = 'MediQueue - Register';
-}, []);
+    document.title = 'MediQueue - Register';
+  }, []);
 
   const validatePassword = (pass) => {
     const hasUpper = /[A-Z]/.test(pass);

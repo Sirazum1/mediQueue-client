@@ -23,9 +23,11 @@ const AddTutor = () => {
     location: '',
     teachingMode: 'Online'
   });
-useEffect(() => {
-  document.title = 'MediQueue - Add Tutor';
-}, []);
+
+  useEffect(() => {
+    document.title = 'MediQueue - Add Tutor';
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

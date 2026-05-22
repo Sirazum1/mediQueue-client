@@ -11,8 +11,8 @@ const Tutors = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  document.title = 'MediQueue - All Tutors';
-}, []);
+    document.title = 'MediQueue - All Tutors';
+  }, []);
 
   useEffect(() => {
     axios.get(`${API_URL}/api/tutors`)

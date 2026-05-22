@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-  
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,8 +9,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-  document.title = 'MediQueue - Login';
-}, []);
+    document.title = 'MediQueue - Login';
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-useEffect(() => {
-  document.title = 'MediQueue - Page Not Found';
-}, []);
+import { useEffect } from 'react';
+
 const NotFound = () => {
+  useEffect(() => {
+    document.title = 'MediQueue - 404';
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">

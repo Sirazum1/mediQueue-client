@@ -10,8 +10,8 @@ const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-  document.title = 'MediQueue - My Bookings';
-}, []);
+    document.title = 'MediQueue - My Bookings';
+  }, []);
 
   useEffect(() => {
     axios.get(`${API_URL}/api/bookings/my-bookings`, {
@@ -46,7 +46,12 @@ const MyBookings = () => {
                 <p className="text-gray-600">{booking.studentName} • {booking.status}</p>
               </div>
               {booking.status === 'booked' && (
-                <button onClick={() => handleCancel(booking._id)} className="px-8 py-4 bg-red-500 text-white rounded-3xl">Cancel</button>
+                <button 
+                  onClick={() => handleCancel(booking._id)} 
+                  className="px-8 py-4 bg-red-500 text-white rounded-3xl hover:bg-red-600"
+                >
+                  Cancel
+                </button>
               )}
             </div>
           ))}
